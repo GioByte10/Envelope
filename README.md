@@ -13,7 +13,8 @@ $$\frac{dF}{dt}\left(t,\ x,\ y\right)=0$$
 However, for this derivation, I am interested in finding a solution to the equation through a purely parametric approach.<br><br>
 
 ## References
-<a href="https://www.desmos.com/calculator/p7smvigiad" target="_blank" rel="noopener noreferrer">Desmos graph</a>
+<a href="https://www.desmos.com/calculator/krz2vv9eol" target="_blank" rel="noopener noreferrer">Desmos static graph</a><br>
+<a href="https://www.desmos.com/calculator/oce7bg1dar" target="_blank" rel="noopener noreferrer">Desmos dynamic graph</a>
 
 <br>
 
@@ -483,5 +484,5 @@ $$\sqrt{x-x_{0}}+\sqrt{y-y_{0}}=\sqrt{k}$$
 <br>
 
 <div align="center">
-  <img src="assets/desmos_3.png" alt="description of gif" width="650"/>
+  <img src="assets/desmos_3.png" alt="description of gif"/>
 </div>
