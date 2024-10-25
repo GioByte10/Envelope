@@ -25,7 +25,7 @@ However, for this derivation, I am interested in finding a solution to the equat
 <br>
 
 
-Let us start by defining two points $$a$$ and $$b$$ moving along the vertical and horizontal line respectively, and let vectors $$\vec{r_{a}\(t)}$$ and $$\vec{r_{b}\(t)}$$ represent their position. We know that these points have the same speed, and thus we have:
+Let us start by defining two points $$a$$ and $$b$$ moving along the vertical and horizontal line respectively, and let vectors $$\vec{r_{a}}\(t)$$ and $$\vec{r_{b}}\(t)$$ represent their position. We know that these points have the same speed, and thus we have:
 
 $$t \in [0, 1]$$
 
@@ -198,7 +198,7 @@ $$
 
 $$\vec{r_{e}}\(u)=
 \begin{bmatrix}
-    x_{0}\\
+    x_{1}\\
     y_{1}+(t+dt)\left(y_{0}-y_{1}\right)
 \end{bmatrix} + u
 \begin{bmatrix}
@@ -350,7 +350,7 @@ $$
 
 $$\vec{r_{c}}\(t)=
 \begin{bmatrix}
-    x_{0}\\
+    x_{1}\\
     y_{1}+t\left(y_{0}-y_{1}\right)
 \end{bmatrix} + t
 \begin{bmatrix}
