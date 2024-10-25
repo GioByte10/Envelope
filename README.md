@@ -323,7 +323,7 @@ $$s=t+dt$$
 
 $$s=\lim_{dt\to0}(t+dt)=t$$
 
-This results in a very interesting solution, since it turns out that $$w_{c}$$ ends up being $$t$$, yielding the following parametric representation of the envelope curve
+This results in a very interesting solution, since, as $$dt$$ approaches $$0$$, the lines intercept when $$s=u=t$$, so it turns out that $$w_{c}$$ ends up being $$t$$, yielding the following parametric representation of the envelope curve
 
 $$\vec{r_{c}}\left(t\right)=\vec{r_{a}}\left(t\right)+t\left(\vec{r_{b}}\left(t\right)-\vec{r_{a}}\left(t\right)\right)$$
 
@@ -331,7 +331,7 @@ We can see that as the point $$a$$ is $$(t\cdot100)$$% along the vertical segmen
 
 $$(x_{1}, y_{1}), (x_{0}, y_{0}), (x_{2}, y_{2})$$
 
-We still want to find implicit equation for the curve. Let us continue by expanding $$r_{c}(t)$$
+We still want to find implicit equation for the curve. Let us continue by expanding $$\vec{r_{c}}(t)$$
 
 $$\vec{r_{c}}\(t)=
 \begin{bmatrix}
@@ -455,11 +455,11 @@ $$\vec{r_{c}}\(t)=
 \end{bmatrix}
 $$
 
-Finally, let us find the equation
+Finally, let us find the equation, knowing that
 
-$$\vec{x_{c}}(t)=t^2k+x_{0}$$
+$$x_{c}(t)=t^2k+x_{0}$$
 
-$$\vec{y_{c}}(t)=(t^2-2t+1)k+x_{0}=(t-1)^2k+y_{0}$$
+$$y_{c}(t)=(t^2-2t+1)k+x_{0}=(t-1)^2k+y_{0}$$
 
 Solve for $$t$$
 
