@@ -12,6 +12,11 @@ $$\frac{dF}{dt}\left(t,\ x,\ y\right)=0$$
 
 However, for this derivation, I am interested in finding a solution to the equation through a purely parametric approach.<br><br>
 
+## References
+<a href="https://www.desmos.com/calculator/p7smvigiad" target="_blank" rel="noopener noreferrer">Desmos graph</a>
+
+<br>
+
 ## Setup
 <div align="center">
   <img src="assets/desmos_1.png" alt="description of gif" width="650"/>
@@ -317,7 +322,7 @@ $$s=t+dt$$
 
 $$s=\lim_{dt\to0}(t+dt)=t$$
 
-This results a very interesting solution, since it turns out that $$w_{c}$$ ends up being $$t$$, yielding a parametric representation of the envelope curve
+This results in a very interesting solution, since it turns out that $$w_{c}$$ ends up being $$t$$, yielding the following parametric representation of the envelope curve
 
 $$\vec{r_{c}}\left(t\right)=\vec{r_{a}}\left(t\right)+t\left(\vec{r_{b}}\left(t\right)-\vec{r_{a}}\left(t\right)\right)$$
 
@@ -474,3 +479,9 @@ $$\big\[\sqrt{\frac{x-x_{0}}{k}}+\sqrt{\frac{y-y_{0}}{k}}=1\big\]\sqrt{k}$$
 Yielding
 
 $$\sqrt{x-x_{0}}+\sqrt{y-y_{0}}=\sqrt{k}$$
+
+<br>
+
+<div align="center">
+  <img src="assets/desmos_3.png" alt="description of gif" width="650"/>
+</div>
