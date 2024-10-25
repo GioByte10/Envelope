@@ -2,7 +2,7 @@
 Perhaps one of the best known examples of an [envelope of a planar family of curves](https://en.wikipedia.org/wiki/Envelope_(mathematics)) is in string art. When cross-connecting two lines of equally spaced pins, as we increase the number of pins we notice that a curved boundary, tangent to the lines, is created.
 
 <div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/EnvelopeAnim.gif" alt="description of gif" width="500"/>
+  <img src="assets/EnvelopeAnim.gif" alt="description of gif" width="500"/>
 </div>
 
 Usually we obtain the equation for this curve using known properties of the envelope:
@@ -13,7 +13,10 @@ $$\frac{dF}{dt}\left(t,\ x,\ y\right)=0$$
 However, for this derivation, I am interested in finding a solution to the equation through a purely parametric approach.<br><br>
 
 ## Derivation
-![image](https://github.com/user-attachments/assets/fa315466-08d7-4bce-b276-fa9b7becf8d1)
+<div align="center">
+  <img src="assets/desmos_1.png" alt="description of gif" width="600"/>
+</div>
+
 
 Lets start by defining two points $$a$$ and $$b$$ moving along the vertical and horizontal line respectively, and let $$r_{a}\(t)$$ and $$r_{b}\(t)$$ represent their position. We know that these points have the same speed, and thus we have:
 
