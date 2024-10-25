@@ -58,9 +58,13 @@ The second one is formed from the same points at time $$t + dt$$
 
 $$\left(x_{a}\left(t+dt\right),\ y_{a}\left(t+dt\right)\right),\ \left(x_{b}\left(t+dt\right),\ y_{b}\left(t+dt\right)\right)$$ 
 
-![image](https://github.com/user-attachments/assets/b29d9e44-711f-45e1-aac8-fba3132cb5ac)
+<div align="center">
+  <img src="assets/desmos_2.png" alt="description of gif" width="600"/>
+</div>
 
-We know that these two lines intercept at some point $$\left(x_{c},y_{c}\right)$$, which we want to find. To do this, we will parametrize the lines and solve the system of equations. Let us call the points riding along the lines $$d$$ and $$e$$, and their parameters $$s$$ and $$u$$ respectively, such that
+We know that these two lines intercept at some point $$\left(x_{c},y_{c}\right)$$, and since we know that the envelope curve is tangent to this point $$c$$
+
+which we want to find. To do this, we will parametrize the lines and solve the system of equations. Let us call the points riding along the lines $$d$$ and $$e$$, and their parameters $$s$$ and $$u$$ respectively, such that
 
 $$r_{d}\left(s\right)=r_{a}\left(t\right)+s\left(r_{b}\left(t\right)-r_{a}\left(t\right)\right)$$
 $$r_{e}\left(u\right)=r_{a}\left(t+dt\right)+u\left(r_{b}\left(t+dt\right)-r_{a}\left(t+dt\right)\right)$$
@@ -253,8 +257,32 @@ $$s(1-t) +u(t+dt-1) = dt$$
 
 Let us substitute $$s=u\left(1+\frac{dt}{t}\right)$$
 
-$$u(1+\frac{dt}{t})(1-t) +u(t+dt+1) = dt$$
+$$u(1+\frac{dt}{t})(1-t) +u(t+dt-1) = dt$$
 
-$$u(1-t+\frac{dt}{t}-t\frac{dt}{t})+u(t+dt+1) = dt$$
+$$u(1-t+\frac{dt}{t}-dt)+u(t+dt-1) = dt$$
 
-$$u(1-t+\frac{dt}{t}-t\frac{dt}{t}+t+dt+1)=dt$$
+$$u(1-t+\frac{dt}{t}-dt+t+dt-1)=dt$$
+
+$$u\frac{dt}{t}=dt$$
+
+$$udt=tdt$$
+
+$$u=t$$
+
+and
+
+$$s=u\left(1+\frac{dt}{t}\right)$$
+
+$$s=t\left(1+\frac{dt}{t}\right)$$
+
+$$s=t+t\frac{dt}{t}$$
+
+$$s=t+dt$$
+
+$$s=\lim_{dt\to0}(t+dt)=t$$
+
+This yields a very interesting solution, as the parametric representation of the envelope curve, $$r_{c}$$
+
+$$r_{c}\left(w\right)=r_{a}\left(t\right)+w\left(r_{b}\left(t\right)-r_{a}\left(t\right)\right)$$
+
+shows that, at any time t, this parameter $$w$$ is $$t$$
