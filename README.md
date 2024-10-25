@@ -18,7 +18,7 @@ However, for this derivation, I am interested in finding a solution to the equat
 </div>
 
 
-Lets start by defining two points $$a$$ and $$b$$ moving along the vertical and horizontal line respectively, and let $$r_{a}\(t)$$ and $$r_{b}\(t)$$ represent their position. We know that these points have the same speed, and thus we have:
+Let us start by defining two points $$a$$ and $$b$$ moving along the vertical and horizontal line respectively, and let vectors $$r_{a}\(t)$$ and $$r_{b}\(t)$$ represent their position. We know that these points have the same speed, and thus we have:
 
 $$r_{a}\(t)=
 \begin{bmatrix}
@@ -60,10 +60,12 @@ $$\left(x_{a}\left(t+dt\right),\ y_{a}\left(t+dt\right)\right),\ \left(x_{b}\lef
 
 ![image](https://github.com/user-attachments/assets/b29d9e44-711f-45e1-aac8-fba3132cb5ac)
 
-We know that these two lines intercept at some point $$\left(x_{c},y_{c}\right)$$, which we want to find. To do this, we will parametrize the lines and set their equations equal to each other. Lets call the points riding along the lines $$d$$ and $$e$$, and their parameters $$s$$ and $$u$$ respectively, such that
+We know that these two lines intercept at some point $$\left(x_{c},y_{c}\right)$$, which we want to find. To do this, we will parametrize the lines and solve the system of equations. Let us call the points riding along the lines $$d$$ and $$e$$, and their parameters $$s$$ and $$u$$ respectively, such that
 
 $$r_{d}\left(s\right)=r_{a}\left(t\right)+s\left(r_{b}\left(t\right)-r_{a}\left(t\right)\right)$$
 $$r_{e}\left(u\right)=r_{a}\left(t+dt\right)+u\left(r_{b}\left(t+dt\right)-r_{a}\left(t+dt\right)\right)$$
+
+We can find the position of point $$c$$ by solving for the value of the parameters $$s$$ and $$u$$ when the lines intercept.
 
 Let's expand the vectors
 
@@ -217,14 +219,42 @@ $$r_{e}\(u)=
 \end{bmatrix}
 $$
 
-Now let's solve the sytem of equations, starting with the x-position
+Now let us solve the sytem of equations, starting with the x-component and solving for $$s$$
 
 $$x_{0}+st\left(x_{2}-x_{0}\right)=x_{0}+u\left(t+dt\right)\left(x_{2}-x_{0}\right)$$
 
-$$(x_{0}+st\left(x_{2}-x_{0}\right)=x_{0}+u\left(t+dt\right)\left(x_{2}-x_{0}\right))-x_{0}$$
+$$\big\[x_{0}+st\left(x_{2}-x_{0}\right)=x_{0}+u\left(t+dt\right)\left(x_{2}-x_{0}\right)\big\] -x_{0}$$
 
 $$st\left(x_{2}-x_{0}\right)=u\left(t+dt\right)\left(x_{2}-x_{0}\right)$$
 
 $$st=u\left(t+dt\right)$$
 
 $$s=u\left(1+\frac{dt}{t}\right)$$
+
+We do the same fot the y-component
+
+$$y_{1}+(s-st+t)(y_{0}-y_{1}) = y_{1}+(t+dt+u-ut-udt)\left(y_{0}-y_{1}\right)$$
+
+$$\big\[y_{1}+(s-st+t)(y_{0}-y_{1}) = y_{1}+(t+dt+u-ut-udt)\left(y_{0}-y_{1}\right)\big\] -y_{1}$$
+
+$$(s-st+t)(y_{0}-y_{1}) = (t+dt+u-ut-udt)\left(y_{0}-y_{1}\right)$$
+
+$$(s-st+t) = (t+dt+u-ut-udt)$$
+
+$$\big\[s-st+t = t+dt+u-ut-udt\big\] -t$$
+
+$$s-st = dt+u-ut-udt$$
+
+$$s(1-t) = u(1-t-dt) + dt$$
+
+$$s(1-t) -u(1-t-dt) = dt$$
+
+$$s(1-t) +u(t+dt-1) = dt$$
+
+Let us substitute $$s=u\left(1+\frac{dt}{t}\right)$$
+
+$$u(1+\frac{dt}{t})(1-t) +u(t+dt+1) = dt$$
+
+$$u(1-t+\frac{dt}{t}-t\frac{dt}{t})+u(t+dt+1) = dt$$
+
+$$u(1-t+\frac{dt}{t}-t\frac{dt}{t}+t+dt+1)=dt$$
