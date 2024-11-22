@@ -19,13 +19,14 @@ However, for this derivation, I am interested in finding a solution to the equat
 <br>
 
 ## Setup
+Let us start by defining two points $$a$$ and $$b$$ moving along the vertical and horizontal line respectively, which form the moving line tangent to the envelope curve. Let vectors $$\vec{r_{a}}\(t)$$ and $$\vec{r_{b}}\(t)$$ represent their position. 
+
 <div align="center">
   <img src="assets/desmos_1.png" alt="description of gif" width="650"/>
 </div>
 <br>
 
-
-Let us start by defining two points $$a$$ and $$b$$ moving along the vertical and horizontal line respectively, and let vectors $$\vec{r_{a}}\(t)$$ and $$\vec{r_{b}}\(t)$$ represent their position. We know that these points have the same speed, and thus we have:
+We know that these points have the same speed, and thus we have:
 
 $$t \in [0, 1]$$
 
